@@ -7,16 +7,18 @@ console.log("saveEl")
 
 function increment(){
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
 }
 
 function save(){
     
     let passengerStr  = count  + " - "
-        saveEl.innerHTML += passengerStr
+        saveEl.textContent += passengerStr
         console.log(count)
-
-
+        countEl.textContent = 0
+        count = 0
+        
+        
 }
 
 
